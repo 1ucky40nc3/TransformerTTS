@@ -5,12 +5,12 @@ import pickle
 import numpy as np
 from p_tqdm import p_uimap, p_umap
 
-from utils.logging_utils import SummaryManager
-from data.text import TextToTokens
-from data.datasets import DataReader
-from utils.config_manager import Config
-from data.audio import Audio
-from data.text.symbols import _alphabet
+from TransformerTTS.utils.logging_utils import SummaryManager
+from TransformerTTS.data.text import TextToTokens
+from TransformerTTS.data.datasets import DataReader
+from TransformerTTS.utils.config_manager import Config
+from TransformerTTS.data.audio import Audio
+from TransformerTTS.data.text.symbols import _alphabet
 
 np.random.seed(42)
 

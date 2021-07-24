@@ -2,13 +2,13 @@ from pathlib import Path
 
 import tensorflow as tf
 
-from TTS.data.audio import Audio
-from TTS.utils.display import tight_grid
-from TTS.utils.display import buffer_image
-from TTS.utils.display import plot_image
-from TTS.utils.display import plot1D
-from TTS.utils.vec_ops import norm_tensor
-from TTS.utils.decorators import ignore_exception
+from TransformerTTS.data.audio import Audio
+from TransformerTTS.utils.display import tight_grid
+from TransformerTTS.utils.display import buffer_image
+from TransformerTTS.utils.display import plot_image
+from TransformerTTS.utils.display import plot1D
+from TransformerTTS.utils.vec_ops import norm_tensor
+from TransformerTTS.utils.decorators import ignore_exception
 
 
 def control_frequency(f):

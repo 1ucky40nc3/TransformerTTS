@@ -8,8 +8,8 @@ import torch.nn.functional as F
 import torch.nn as nn
 from torch.nn import Conv1d, ConvTranspose1d, AvgPool1d, Conv2d
 from torch.nn.utils import weight_norm, remove_weight_norm, spectral_norm
-from TTS.vocoding.hifigan.utils import init_weights
-from TTS.vocoding.hifigan.utils import get_padding
+from TransformerTTS.vocoding.hifigan.utils import init_weights
+from TransformerTTS.vocoding.hifigan.utils import get_padding
 
 LRELU_SLOPE = 0.1
 

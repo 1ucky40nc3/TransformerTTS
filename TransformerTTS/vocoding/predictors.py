@@ -5,8 +5,8 @@ import torch
 from vocoding.melgan.generator import Generator
 from typing import List
 from abc import ABC, abstractmethod
-from TTS.vocoding.hifigan.env import AttrDict
-from TTS.vocoding.hifigan.models import Generator as GeneratorHiFiGAN
+from TransformerTTS.vocoding.hifigan.env import AttrDict
+from TransformerTTS.vocoding.hifigan.models import Generator as GeneratorHiFiGAN
 import json
 import numpy as np
 

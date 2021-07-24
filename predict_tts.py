@@ -3,9 +3,9 @@ from pathlib import Path
 
 import numpy as np
 
-from utils.config_manager import Config
-from model.factory import tts_ljspeech, tts_custom
-from data.audio import Audio
+from TransformerTTS.utils.config_manager import Config
+from TransformerTTS.model.factory import tts_ljspeech, tts_custom
+from TransformerTTS.data.audio import Audio
 
 if __name__ == '__main__':
     parser = ArgumentParser()

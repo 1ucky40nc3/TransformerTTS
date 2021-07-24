@@ -5,9 +5,9 @@ from typing import List, Union
 import numpy as np
 import tensorflow as tf
 
-from TTS.utils.config_manager import Config
-from TTS.data.text.tokenizer import Tokenizer
-from TTS.data.metadata_readers import get_preprocessor_by_name
+from TransformerTTS.utils.config_manager import Config
+from TransformerTTS.data.text.tokenizer import Tokenizer
+from TransformerTTS.data.metadata_readers import get_preprocessor_by_name
 
 
 def get_files(path: Union[Path, str], extension='.wav') -> List[Path]:

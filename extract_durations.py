@@ -6,13 +6,13 @@ import numpy as np
 from tqdm import tqdm
 from p_tqdm import p_umap
 
-from utils.config_manager import Config
-from utils.logging_utils import SummaryManager
-from data.datasets import AlignerPreprocessor
-from utils.alignments import get_durations_from_alignment
-from utils.scripts_utils import dynamic_memory_allocation
-from data.datasets import AlignerDataset
-from data.datasets import DataReader
+from TransformerTTS.utils.config_manager import Config
+from TransformerTTS.utils.logging_utils import SummaryManager
+from TransformerTTS.data.datasets import AlignerPreprocessor
+from TransformerTTS.utils.alignments import get_durations_from_alignment
+from TransformerTTS.utils.scripts_utils import dynamic_memory_allocation
+from TransformerTTS.data.datasets import AlignerDataset
+from TransformerTTS.data.datasets import DataReader
 
 np.random.seed(42)
 tf.random.set_seed(42)

@@ -2,15 +2,15 @@ import tensorflow as tf
 import numpy as np
 from tqdm import trange
 
-from utils.config_manager import Config
-from data.datasets import AlignerDataset, AlignerPreprocessor
-from utils.decorators import ignore_exception, time_it
-from utils.scheduling import piecewise_linear_schedule, reduction_schedule
-from utils.logging_utils import SummaryManager
-from utils.scripts_utils import dynamic_memory_allocation, basic_train_parser
-from utils.metrics import attention_score
-from utils.spectrogram_ops import mel_lengths, phoneme_lengths
-from utils.alignments import get_durations_from_alignment
+from TransformerTTS.utils.config_manager import Config
+from TransformerTTS.data.datasets import AlignerDataset, AlignerPreprocessor
+from TransformerTTS.utils.decorators import ignore_exception, time_it
+from TransformerTTS.utils.scheduling import piecewise_linear_schedule, reduction_schedule
+from TransformerTTS.utils.logging_utils import SummaryManager
+from TransformerTTS.utils.scripts_utils import dynamic_memory_allocation, basic_train_parser
+from TransformerTTS.utils.metrics import attention_score
+from TransformerTTS.utils.spectrogram_ops import mel_lengths, phoneme_lengths
+from TransformerTTS.utils.alignments import get_durations_from_alignment
 
 np.random.seed(42)
 tf.random.set_seed(42)

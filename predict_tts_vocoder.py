@@ -3,10 +3,10 @@ from pathlib import Path
 
 import numpy as np
 
-from model.factory import tts_ljspeech, tts_custom
-from utils.config_manager import Config
-from data.audio import Audio
-from vocoding.predictors import HiFiGANPredictor, MelGANPredictor
+from TransformerTTS.model.factory import tts_ljspeech, tts_custom
+from TransformerTTS.utils.config_manager import Config
+from TransformerTTS.data.audio import Audio
+from TransformerTTS.vocoding.predictors import HiFiGANPredictor, MelGANPredictor
 
 if __name__ == '__main__':
     parser = ArgumentParser()

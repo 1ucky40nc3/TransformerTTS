@@ -1,6 +1,6 @@
 from argparse import ArgumentParser
 
-from TTS.utils.config_manager import Config
+from TransformerTTS.utils.config_manager import Config
 
 if __name__ == '__main__':
     parser = ArgumentParser()

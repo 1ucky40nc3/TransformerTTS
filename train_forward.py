@@ -2,14 +2,14 @@ import tensorflow as tf
 import numpy as np
 from tqdm import trange
 
-from utils.config_manager import Config
-from data.datasets import TTSDataset, TTSPreprocessor
-from utils.decorators import ignore_exception, time_it
-from utils.scheduling import piecewise_linear_schedule
-from utils.logging_utils import SummaryManager
-from model.transformer_utils import create_mel_padding_mask
-from utils.scripts_utils import dynamic_memory_allocation, basic_train_parser
-from data.metadata_readers import post_processed_reader
+from TransformerTTS.utils.config_manager import Config
+from TransformerTTS.data.datasets import TTSDataset, TTSPreprocessor
+from TransformerTTS.utils.decorators import ignore_exception, time_it
+from TransformerTTS.utils.scheduling import piecewise_linear_schedule
+from TransformerTTS.utils.logging_utils import SummaryManager
+from TransformerTTS.model.transformer_utils import create_mel_padding_mask
+from TransformerTTS.utils.scripts_utils import dynamic_memory_allocation, basic_train_parser
+from TransformerTTS.data.metadata_readers import post_processed_reader
 
 np.random.seed(42)
 tf.random.set_seed(42)
