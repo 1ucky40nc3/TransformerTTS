@@ -2,7 +2,7 @@ from pathlib import Path
 
 import ruamel.yaml
 import torch
-from vocoding.melgan.generator import Generator
+from TransformerTTS.vocoding.melgan.generator import Generator
 from typing import List
 from abc import ABC, abstractmethod
 from TransformerTTS.vocoding.hifigan.env import AttrDict
