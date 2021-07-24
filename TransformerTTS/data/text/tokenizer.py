@@ -3,7 +3,7 @@ import re
 
 from phonemizer.phonemize import phonemize
 
-from data.text.symbols import all_phonemes, _punctuations
+from TransformerTTS.data.text.symbols import all_phonemes, _punctuations
 
 
 class Tokenizer:
