@@ -1,7 +1,7 @@
 from typing import Union
 
-from data.text.symbols import all_phonemes
-from data.text.tokenizer import Phonemizer, Tokenizer
+from TTS.data.text.symbols import all_phonemes
+from TTS.data.text.tokenizer import Phonemizer, Tokenizer
 
 
 class TextToTokens:

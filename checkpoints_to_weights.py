@@ -1,6 +1,6 @@
 from argparse import ArgumentParser
 
-from utils.config_manager import Config
+from TTS.utils.config_manager import Config
 
 if __name__ == '__main__':
     parser = ArgumentParser()

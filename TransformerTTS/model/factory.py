@@ -3,7 +3,8 @@ from typing import Tuple
 import tensorflow as tf
 import ruamel.yaml
 
-from model.models import ForwardTransformer, Aligner
+from TTS.model.models import ForwardTransformer
+from TTS.model.models import Aligner
 
 
 def tts_ljspeech(version='v1') -> Tuple[ForwardTransformer, dict]:

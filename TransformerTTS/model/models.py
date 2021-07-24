@@ -1,11 +1,19 @@
 import tensorflow as tf
 import numpy as np
 
-from model.transformer_utils import create_encoder_padding_mask, create_mel_padding_mask, create_look_ahead_mask
-from utils.losses import weighted_sum_losses, masked_mean_absolute_error, new_scaled_crossentropy
-from data.text import TextToTokens
-from model.layers import DecoderPrenet, Postnet, StatPredictor, Expand, SelfAttentionBlocks, CrossAttentionBlocks
-from utils.metrics import batch_diagonal_mask
+from TTS.model.transformer_utils import create_encoder_padding_mask
+from TTS.model.transformer_utils import create_mel_padding_mask, create_look_ahead_mask
+from TTS.utils.losses import weighted_sum_losses
+from TTS.utils.losses import masked_mean_absolute_error
+from TTS.utils.losses import new_scaled_crossentropy
+from TTS.data.text import TextToTokens
+from TTS.model.layers import DecoderPrenet
+from TTS.model.layers import Postnet
+from TTS.model.layers import StatPredictor
+from TTS.model.layers import Expand
+from TTS.model.layers import SelfAttentionBlocks
+from TTS.model.layers import CrossAttentionBlocks
+from TTS.utils.metrics import batch_diagonal_mask
 
 
 class Aligner(tf.keras.models.Model):

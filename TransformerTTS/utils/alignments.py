@@ -1,7 +1,7 @@
 import tensorflow as tf
 
-from utils.metrics import attention_score
-from utils.spectrogram_ops import mel_lengths, phoneme_lengths
+from TTS.utils.metrics import attention_score
+from TTS.utils.spectrogram_ops import mel_lengths, phoneme_lengths
 
 logger = tf.get_logger()
 logger.setLevel('ERROR')

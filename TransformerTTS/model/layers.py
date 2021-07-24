@@ -1,6 +1,7 @@
 import tensorflow as tf
 
-from model.transformer_utils import positional_encoding, scaled_dot_product_attention
+from TTS.model.transformer_utils import positional_encoding
+from TTS.model.transformer_utils import scaled_dot_product_attention
 
 
 class CNNResNorm(tf.keras.layers.Layer):
