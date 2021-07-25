@@ -9,7 +9,7 @@ def read(fname):
     return open(os.path.join(os.path.dirname(__file__), fname)).read()
 
 setup(
-    name = "TTS",
+    name = "TransformerTTS",
     version = "0.0.1",
     packages=['TransformerTTS', 'tests'],
     long_description=read('README.md'),
