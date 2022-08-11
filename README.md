@@ -1,3 +1,15 @@
+# What about this fork/branch?
+
+In this branch I want to conduct experiments about music generation using TransformerTTS methods. I will note changes and updates.
+
+Information about the original TransformerTTS work can be found below. Thanks to the original autors for their generous contributions and great work!
+
+
+## Updates
+- data directory to describe how to build new datasets
+
+---
+
 <p align="center">
     <br>
     <img src="https://raw.githubusercontent.com/as-ideas/TransformerTTS/master/docs/transformer_logo.png" width="400"/>
