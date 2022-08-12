@@ -7,7 +7,7 @@ import pandas as pd
 from tqdm import tqdm
 
 from miditok import REMI
-from miditok import MidiFile
+from miditoolkit import MidiFile
 
 
 def main(args):
