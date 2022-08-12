@@ -28,7 +28,7 @@ def main(args):
         "origin": []
     }
     max_songs = len(songs) - 1
-    for i in tqdm(args.num_seq):
+    for i in tqdm(range(args.num_seq)):
         song_idx = random.randint(0, max_songs)
         song_tokens = songs[song_idx][0]
         start_token_idx = random.randint(
