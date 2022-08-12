@@ -1,6 +1,5 @@
 import os
 import argparse
-import subprocesss
 
 import pandas as pd
 
@@ -29,7 +28,7 @@ def main(args):
 
         # Create the wav file
         wav_path = f"{args.wav_dir}/{f}"
-        subprocesss.run(
+        os.popen(
             f"fluidsynth {args.sound_font} {midi_path} -F {wav_path}")
 
 
