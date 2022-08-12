@@ -14,7 +14,7 @@ def main(args):
     tokenizer = REMI()
     
     print("Loading songs...")
-    paths = glob.glob(f"{args.path}/.midi")
+    paths = glob.glob(f"{args.data_dir}/.midi")
     songs = []
     for path in tqdm(paths):
         midi = MidiFile(path)
