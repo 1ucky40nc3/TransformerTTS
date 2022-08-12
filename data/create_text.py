@@ -42,7 +42,7 @@ def main(args):
 
         metadata["filename"].append(f"{str(i)}.wav")
         metadata["tokens"].append(seq)
-        metadata["origin"].append(paths[i])
+        metadata["origin"].append(paths[song_idx])
 
     df = pd.DataFrame(metadata)
     df.to_csv(args.out_file)
