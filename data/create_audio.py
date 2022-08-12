@@ -20,8 +20,10 @@ def main(args):
     for f, t, o in tqdm(zip(df["filename"], df["tokens"], df["origin"])):
         # Create the midi file.
         original = MidiFile(o)
+        tokens = t.strip('][').split(', ')
+        tokens = [[int(i) for i in tokens]]
         midi = tokenizer.tokens_to_midi(
-            t, get_midi_programs(original))
+            tokens, get_midi_programs(original))
         filename = f.split("/")[-1]
         midi_path = f"{args.midi_dir}/{filename}.midi"
         midi.dump(midi_path)
